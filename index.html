@@ -12,6 +12,7 @@
             const color = document.createElement('input')
             color.type = 'color'
             color.value = '#fff'
+            trash.style.cursor = 'pointer'
 
             const trash = document.createElement('i')
             trash.className = 'fa-solid fa-trash'
@@ -19,7 +20,7 @@
                 color.remove()
                 trash.remove()
             }
-
+            trash.style.cursor = 'pointer'
             
             divContenidor.appendChild(color)
             divContenidor.appendChild(trash)
