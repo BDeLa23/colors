@@ -8,11 +8,18 @@
         button {
             cursor: pointer;
         }
+
+        .container {
+            border: 1.5px solid #ccc;
+            border-radius: 4px;
+            width: fit-content;
+        }
     </style>
     <script>
         function createColor() {
             const divContenidor = document.createElement('div')
             divContenidor.style.marginTop = '1rem'
+            divContenidor.className = 'container'
             
             const color = document.createElement('input')
             color.type = 'color'
